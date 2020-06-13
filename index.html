@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Nayak</title>
+    <!-- Popper.js first, then CoreUI JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- CoreUI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css"
+    />
+  </head>
+
+  <body class="c-app">
+    <div
+      class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-md-show"
+      id="sidebar"
+    >
+      <div class="c-sidebar-brand d-md-down-none ">
+        <img class="profile img-responsive c-img" src="profile.jpg" />
+      </div>
+      <ul class="c-sidebar-nav ps">
+        <li class="c-sidebar-nav-item">
+          <a href="/" class="c-sidebar-nav-link">
+            <i class="c-sidebar-nav-icon fa fa-user-o"></i>
+            Profile
+          </a>
+        </li>
+        <li class="c-sidebar-nav-dropdown">
+          <a href="/" class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle">
+            <i class="c-sidebar-nav-icon cil-address-book"></i>
+            Experience
+          </a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-history"
+                  aria-hidden="true"
+                ></i>
+                AdsXenium Technology
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-history"
+                  aria-hidden="true"
+                ></i>
+                Credence
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-history"
+                  aria-hidden="true"
+                ></i>
+                Shiloutte Ventures
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-history"
+                  aria-hidden="true"
+                ></i>
+                iAdept Marketing
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-history"
+                  aria-hidden="true"
+                ></i>
+                Jabong
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item">
+          <a href="/" class="c-sidebar-nav-link">
+            <i class="c-sidebar-nav-icon cil-school"></i>
+            Education
+          </a>
+        </li>
+        <li class="c-sidebar-nav-dropdown">
+          <a href="#" class="c-sidear-nav-link c-sidebar-nav-dropdown-toggle">
+            <i class="c-sidebar-nav-icon fa fa-book"></i>
+            Projects
+          </a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i class="c-sidebar-nav-icon fa fa-pencil"></i>
+                To-Do App
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-spinner fa-pulse fa-fw"
+                  aria-hidden="true"
+                ></i>
+                Department Website
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-users"
+                  aria-hidden="true"
+                ></i>
+                Quiz Portal
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i
+                  class="c-sidebar-nav-icon fa fa-shopping-cart"
+                  aria-hidden="true"
+                ></i>
+                E-Commerce Website
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i class="c-sidebar-nav-icon fa fa-code" aria-hidden="true"></i>
+                Get Block Algorithm
+              </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+              <a href="#" class="c-sidebar-nav-link">
+                <i class="c-sidebar-nav-icon fa fa-code" aria-hidden="true"></i>
+                FTP Simulation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item">
+          <a href="#" class="c-sidebar-nav-link">
+            <i class="c-sidebar-nav-icon fa fa-cog"></i>
+            Skills
+          </a>
+        </li>
+        <li class="c-sidebar-nav-item">
+          <a href="#" class="c-sidebar-nav-link">
+            <i class="c-sidebar-nav-icon fa fa-link"></i>
+            Connect With Me
+          </a>
+        </li>
+      </ul>
+      <button
+        class="c-sidebar-minimizer c-class-toggler btn btn-ghost-secondary"
+        type="button"
+        data-target="_parent"
+        data-class="c-sidebar-md-show"
+      ></button>
+    </div>
+    <div class="c-wrapper">
+      <header class="c-header c-header-light c-header-fixed">
+        <button
+          class="c-header-toggler c-class-toggler d-lg-none mfe-auto"
+          type="button"
+          data-target="#sidebar"
+          data-class="c-sidebar-show"
+          onclick="dat()"
+        >
+          <i class="c-header-nav-icon fa fa-bars"></i>
+        </button>
+        <button
+          class="c-header-toggler c-class-toggler mfs-3 d-md-down-none"
+          type="button"
+          data-target="#sidebar"
+          data-class="c-sidebar-md-show"
+          responsive="true"
+        >
+          <i class="c-header-nav-icon fa fa-bars"></i>
+        </button>
+        <div
+          class=" c-header-nav nav c-avatar"
+          style="position: absolute; right:7%;"
+        >
+          <img src="profile_avtar.jpg" alt="avatar" class="c-avatar-img" />
+        </div>
+      </header>
+      <div class="c-body" id="theme">
+        <main class="c-main">
+          <div class="container-fluid">
+            <div class="fade-in">
+              <div class="card">
+                <div class="card-header">
+                  <h3><b>Professional Info</b></h3>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 mr-sm-2 ml-sm-2 card">
+                      <div class="card-header">
+                        <h4><b>About Me</b></h4>
+                      </div>
+                      <div card-body>
+                        <h5>
+                          <br />
+                          I am a Application Developer Proficient in Node.js and
+                          building RESTful API's. Have a good command over
+                          various technologies and basic fundamentals
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mr-sm-2 ml-sm-2 card">
+                      <div class="card-header">
+                        <h4><b>Resume</b></h4>
+                      </div>
+                      <div card-body>
+                        <h5>
+                          <br />
+                          Hey !!! welcome to my page. Want to have my resume,
+                          <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                          >
+                            <i><u>click Here</u></i>
+                          </a>
+                          to see my resume.
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 mr-sm-2 ml-sm-2 card">
+                      <div class="card-header">
+                        <h4><b>Contact Me</b></h4>
+                      </div>
+                      <div card-body>
+                        <form action="" class="form-horizontal mt-2">
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                    <i class="c-icon fa fa-user"></i>
+                                  </span>
+                                </div>
+                                <input
+                                  type="text"
+                                  placeholder="Enter your name"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <input
+                                  type="email"
+                                  placeholder="Your Email id"
+                                  class="form-control"
+                                />
+                                <div class="input-group-append">
+                                  <span class="input-group-text">
+                                    <i class="c-icon fa fa-envelope-o"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="card-footer">
+                        <button
+                          class="btn btn-md  btn-ghost-success btn-outline-success"
+                        >
+                          Connect
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="c-footer">
+        <div style="display: flex;">
+          <label
+            class="c-header-nav-item c-switch c-switch-3d c-switch-secondary"
+          >
+            <input type="checkbox" class="c-switch-input" checked="" />
+            <span class="c-switch-slider "></span>
+          </label>
+          <h5 class="c-header-nav=tiem" style="margin-left: 10px;">
+            Change Theme
+          </h5>
+        </div>
+      </footer>
+    </div>
+    <script src="data.js"></script>
+  </body>
+  <style>
+    .profile {
+      max-height: 70%;
+    }
+    .dark {
+      background-color: #636f83;
+      color: #ffffff;
+      justify-content: center;
+    }
+    .fade-in {
+      animation-duration: 2s;
+    }
+  </style>
+</html>
