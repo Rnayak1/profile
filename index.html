@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Rohit Nayak</title>
     <!-- Popper.js first, then CoreUI JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
     <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <!-- CoreUI CSS -->
@@ -15,46 +16,47 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
-<body class="c-app c-dark-theme">
+<body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-md-show" id="sidebar">
         <div class="c-sidebar-brand d-md-down-none ">
             <img class="profile img-responsive c-img" src="profile.jpg" />
         </div>
         <ul class="c-sidebar-nav ps">
             <li class="c-sidebar-nav-item">
-                <a href="/" class="c-sidebar-nav-link">
+                <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('profile')">
                     <i class="c-sidebar-nav-icon fa fa-user-o"></i> Profile
                 </a>
             </li>
             <li class="c-sidebar-nav-dropdown">
-                <a href="/" class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle">
+                <a href="#" class="c-sidebar-nav-dropdown-toggle">
                     <i class="c-sidebar-nav-icon cil-address-book"></i> Experience
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('adsxenium')">
                             <i class="c-sidebar-nav-icon fa fa-history" aria-hidden="true"></i> AdsXenium Technology
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('credence')">
                             <i class="c-sidebar-nav-icon fa fa-history" aria-hidden="true"></i> Credence
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('silhoutte')">
                             <i class="c-sidebar-nav-icon fa fa-history" aria-hidden="true"></i> Shiloutte Ventures
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('iAdept')">
                             <i class="c-sidebar-nav-icon fa fa-history" aria-hidden="true"></i> iAdept Marketing
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('jabong')">
                             <i class="c-sidebar-nav-icon fa fa-history" aria-hidden="true"></i> Jabong
                         </a>
                     </li>
@@ -66,7 +68,7 @@
                 </a>
             </li>
             <li class="c-sidebar-nav-dropdown">
-                <a href="#" class="c-sidear-nav-link c-sidebar-nav-dropdown-toggle">
+                <a href="#" class="c-sidebar-nav-dropdown-toggle">
                     <i class="c-sidebar-nav-icon fa fa-book"></i> Projects
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
@@ -152,188 +154,14 @@
                 </div>
             </div>
         </header>
-        <div class="c-body" id="theme">
+        <div class="c-body">
             <main class="c-main">
                 <div class="container-fluid">
-                    <div class="fade-in">
-                        <div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3><b>Personal Info</b></h3>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6 col-12 mr-sm-2 ml-sm-2 card ">
-                                            <div class="card-header">
-                                                <h4><b>About Me</b></h4>
-                                            </div>
-                                            <div card-body>
-                                                <h5>
-                                                    <br /> Completed Masters from DU and now seeking to startmy career in Applicaton Devlopment. <br /> Fond of travelling <i class="fa fa-car"></i> but Lazy on weekend <i class="fa fa-bed"></i> .
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 col-12 mr-sm-2 ml-sm-2 card ">
-                                            <div class="card-header">
-                                                <h4><b>Feild of Intrest</b></h4>
-                                            </div>
-                                            <div card-body>
-                                                <h5>
-                                                    <br />
-                                                    <li class="fa fa-hand-o-right">
-                                                        &nbsp; &nbsp; Badminton
-                                                    </li>
-                                                    <br />
-                                                    <li class="fa fa-hand-o-right">
-                                                        &nbsp; &nbsp; Chess
-                                                    </li>
-                                                    <br />
-                                                    <li class="fa fa-hand-o-right">
-                                                        &nbsp; &nbsp; Table Tennis
-                                                    </li>
-                                                    <br />
-                                                    <li class="fa fa-hand-o-right">
-                                                        &nbsp; &nbsp; Listening Music
-                                                    </li>
-                                                    <br />
-                                                    <li class="fa fa-hand-o-right">
-                                                        &nbsp; &nbsp; Partying
-                                                    </li>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12 mr-sm-2 ml-sm-2 card ">
-                                            <div class="card-header">
-                                                <h4><b>Connect With Me</b></h4>
-                                            </div>
-                                            <div card-body>
-                                                <br />
-                                                <a class="btn btn-sm btn-linkedin ml-3 muted" href="https://linkedin.com/in/rohit-nayak" target="_blank">
-                                                    <span class="c-icon" data-toggle="tooltip" title="" data-original-title="Default tooltip">
-                              <i
-                                class="fa fa-linkedin"
-                                style="color:#ffffff ;"
-                              ></i>
-                            </span>
-                                                </a>
-                                                <a class="btn btn-sm btn-facebook ml-3" href="https://www.facebook.com/rohit.n116/" target="_blank">
-                                                    <span class="c-icon">
-                              <i
-                                class="fa fa-facebook"
-                                style="color:#ffffff ;"
-                              ></i>
-                            </span>
-                                                </a>
-                                                <a class="btn btn-sm btn-vimeo ml-3" href="https://web.whatsapp.com/send?phone=+919910776416&text=Hello" target="_blank">
-                                                    <span class="c-icon">
-                              <i
-                                class="fa fa-whatsapp"
-                                style="color:#ffffff ;"
-                              ></i>
-                            </span>
-                                                </a>
-                                                <a class="btn btn-sm btn-stack-overflow ml-3" href="https://stackoverflow.com/users/9654274/rnayak" target="_blank">
-                                                    <span class="c-icon">
-                              <i
-                                class="fa fa-stack-overflow"
-                                style="color:#ffffff ;"
-                              ></i>
-                            </span>
-                                                </a>
-                                                <a class="btn btn-sm btn-github ml-3" href="https://github.com/rnayak1" target="_blank">
-                                                    <span class="c-icon">
-                              <i
-                                class="fa fa-github"
-                                style="color:#ffffff ;"
-                              ></i>
-                            </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3><b>Professional Info</b></h3>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6 col-12 mr-sm-2 ml-sm-2 card ">
-                                            <div class="card-header">
-                                                <h4><b>About Me</b></h4>
-                                            </div>
-                                            <div card-body>
-                                                <h5>
-                                                    <br /> I am a Application Developer Proficient in Node.js and building RESTful API's. Have a good command over various technologies and basic fundamentals
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 col-12 mr-sm-2 ml-sm-2 card ">
-                                            <div class="card-header">
-                                                <h4><b>Resume</b></h4>
-                                            </div>
-                                            <div card-body>
-                                                <h5>
-                                                    <br /> Hey !!! welcome to my page. Want to have my resume,
-                                                    <a href="#" target="_blank" rel="noopener noreferrer" download>
-                                                        <i><u>click Here</u></i>
-                                                    </a>
-                                                    to see my resume.
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-12 mr-sm-2 ml-sm-2 card ">
-                                            <div class="card-header">
-                                                <h4><b>Contact Me</b></h4>
-                                            </div>
-                                            <div card-body>
-                                                <form action="" class="form-horizontal mt-2">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-12">
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                      <i class="c-icon fa fa-user"></i>
-                                    </span>
-                                                                </div>
-                                                                <input type="text" placeholder="Enter your name" class="form-control" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-md-12">
-                                                            <div class="input-group">
-                                                                <input type="email" placeholder="Your Email id" class="form-control" />
-                                                                <div class="input-group-append">
-                                                                    <span class="input-group-text">
-                                      <i class="c-icon fa fa-envelope-o"></i>
-                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button class="btn btn-md  btn-ghost-success btn-outline-success" type="submit">
-                            Connect
-                          </button>
-                                                <button class="btn btn-md btn-ghost-info" style="float: right;">
-                            <i class="c-icon fa fa-coffee"></i>
-                            Buy me a Coffee
-                          </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="fade-in" id="theme"></div>
                 </div>
             </main>
         </div>
-        <footer class="c-footer">
+        <footer class="c-footer c-footer-fixed">
             <div style="display: flex;">
                 <label class="c-header-nav-item c-switch c-switch-3d c-switch-secondary">
             <input type="checkbox" class="c-switch-input" checked="" />
