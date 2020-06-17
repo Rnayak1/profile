@@ -679,6 +679,186 @@ const education = `
     </div>
 </div>
 `
+
+const projects = {
+    todo: `
+    <div>
+        <div class="card">
+        <div class="card-header">
+            To-Do App
+        </div>
+        <div class="card-body card-columns">
+            <div class="card">
+            <div class="card-header">
+                Details
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Created fully functional to-do app supporting
+                    login/signup with otp validation
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Implemented session management and data filteration
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i> This
+                    was devloped for hackathon hosted on
+                    <strong>Hackerearth</strong>
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Working application demo can be found at
+                    <a
+                    href="https://cutt.ly/stackhackv1"
+                    target="_blank"
+                    style="color: inherit;"
+                    >here</a
+                    >
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <strong>Tech Stack</strong>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>React
+                    Native
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >Express
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >MongoDB
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >GitHub
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <strong> Collaborators</strong>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    <a
+                    href="https://github.com/rnayak1"
+                    style="color: inherit;"
+                    target="_blank"
+                    >
+                    <u>Rohit Nayak</u>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    <a
+                    href="https://github.com/khushboo2803"
+                    target="_blank"
+                    style="color: inherit;"
+                    >
+                    <u>Khushboo</u></a
+                    >
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    `,
+    dept: `
+    <div>
+        <div class="card">
+        <div class="card-header">
+            Department Website
+        </div>
+        <div class="card-body card-columns">
+            <div class="card">
+            <div class="card-header">
+                Details
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Created dynamic version of website for semester
+                    project
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    data to be was stored on JSON file
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Project was completed successfully
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <strong>Tech Stack</strong>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >Node.js
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >Express with EJS
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >MongoDB
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >GitHub
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <strong> Collaborators</strong>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    <a
+                    href="https://github.com/rnayak1"
+                    style="color: inherit;"
+                    target="_blank"
+                    >
+                    <u>Rohit Nayak</u>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    `,
+
+}
+
 const notFound = `
 <div class="fade-in animate__animated animate__backInUp">
     <h6> Might taken have wrong exit </h6>
@@ -733,4 +913,4 @@ const updateInnerBox = (dataToLoad) => {
     }
 }
 
-//updateInnerBox('profile')
+updateInnerBox('profile')
