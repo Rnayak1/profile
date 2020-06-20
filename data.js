@@ -537,7 +537,7 @@ const experience = {
 }
 const education = `
 <div>
-    <div class="card">
+    <div class="card animate__animated animate__zoomIn">
         <div class="card-header">
         <strong>Education: </strong>
         </div>
@@ -683,7 +683,7 @@ const education = `
 const projects = {
     todo: `
     <div>
-        <div class="card">
+        <div class="card animate__animated animate__bounceInUp">
         <div class="card-header">
             To-Do App
         </div>
@@ -781,7 +781,7 @@ const projects = {
     `,
     dept: `
     <div>
-        <div class="card">
+        <div class="card animate__animated animate__bounceInRight">
         <div class="card-header">
             Department Website
         </div>
@@ -856,9 +856,262 @@ const projects = {
         </div>
     </div>
     `,
-
+    quiz: `
+    <div>
+        <div class="card animate__animated animate__fadeInLeft">
+        <div class="card-header">
+            <strong>Quiz Portal</strong>
+        </div>
+        <div class="card-body card-columns">
+            <div class="card">
+            <div class="card-header">
+                Details
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Created portal of our technical fest
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Session handling and submisson was handled
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    Real-Time score calculation and sharing data with
+                    backend.
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <strong>Tech Stack</strong>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>PHP
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i
+                    >My-Sql
+                </li>
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>XAMPP
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+                <strong> Collaborators</strong>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="c-icon fa fa-angle-double-right"></i>
+                    <a
+                    href="https://github.com/rnayak1"
+                    style="color: inherit;"
+                    target="_blank"
+                    >
+                    <u>Rohit Nayak</u>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    `,
+    getBlock: `
+    <div>
+        <div class="card animate__animated animate__bounceInDown">
+            <div class="card-header">
+                <strong>Get Block Algorithm</strong>
+            </div>
+            <div class="card-body card-columns">
+                <div class="card">
+                    <div class="card-header">
+                        Details
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="c-icon fa fa-angle-double-right"></i> simulated the algorithm of get block that os perform in order to allocate resource and carry out the functionality.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="c-icon fa fa-angle-double-right"></i> Used doubly linked list to implement the algorithm
+                            </li>
+                            <li class="list-group-item">
+                                <i class="c-icon fa fa-angle-double-right"></i> edge cases and efficient use of link-list was made.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Tech Stack</strong>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="c-icon fa fa-angle-double-right"></i>C++
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <strong> Collaborator(s)</strong>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="c-icon fa fa-angle-double-right"></i>
+                                <a href="https://github.com/rnayak1" style="color: inherit;" target="_blank">
+                                    <u>Rohit Nayak</u>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `,
 }
 
+const skills = `
+<div>
+    <div class="card animate__animated animate__zoomIn">
+        <div class="card-header">
+            <strong>Skills</strong>
+        </div>
+        <div class="card-body row">
+            <div class="card col-sm-4 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        Data Structure & Algorithms
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-3 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        C++
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-3 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        Node.Js
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-4 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        React-Native
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                            Beginner
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-3 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        HTMl
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-3 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        MongoDb
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-4 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        REST API (Node.js)
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            Expert
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-3 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        Bootstrap
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-3 ml-sm-3 col-12">
+                <div class="card-body">
+                    <div class="text-value-lg">
+                        Javascript
+                    </div>
+                    <div class="progress my-2">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card animate__animated animate__bounceInUp">
+        <div class="card-header">
+            <strong>My github activities</strong>
+        </div>
+        <div class="card-body" id="git">
+
+        </div>
+    </div>
+    </div>
+`;
 const notFound = `
 <div class="fade-in animate__animated animate__backInUp">
     <h6> Might taken have wrong exit </h6>
@@ -870,12 +1123,12 @@ const dat = () => {
 }
 
 const gitData = async(userName) => {
-        const gitData = await axios.get('https://api.bloggify.net/gh-calendar/?username=rnayak1')
-        console.log(typeof(gitData.data));
-        document.getElementById('git').innerHTML += gitData.data;
-        document.getElementsByClassName('contrib-footer')[0].style.display = "none"
-    }
-    //gitData('rnayak1');
+    const gitData = await axios.get(`https://api.bloggify.net/gh-calendar/?username=${userName}`)
+    console.log(typeof(gitData.data));
+    document.getElementById('git').innerHTML += gitData.data;
+    document.getElementsByClassName('contrib-footer')[0].style.display = "none"
+}
+
 
 const changeTheme = () => {
     if (document.body.classList.contains('c-dark-theme'))
@@ -906,6 +1159,28 @@ const updateInnerBox = (dataToLoad) => {
             break;
         case "jabong":
             document.getElementById('theme').innerHTML = experience.jabong;
+            break;
+        case "education":
+            document.getElementById('theme').innerHTML = education;
+            break;
+        case "todo":
+            document.getElementById('theme').innerHTML = projects.todo;
+            break;
+        case "dept":
+            document.getElementById('theme').innerHTML = projects.dept;
+            break;
+        case "quiz":
+            document.getElementById('theme').innerHTML = projects.quiz;
+            break;
+        case "getBlock":
+            document.getElementById('theme').innerHTML = projects.getBlock;
+            break;
+        case "ftp":
+            document.getElementById('theme').innerHTML = projects.ftp;
+            break;
+        case "skills":
+            document.getElementById('theme').innerHTML = skills;
+            gitData('rnayak1');
             break;
         default:
             document.getElementById('theme').innerHTML = notFound;

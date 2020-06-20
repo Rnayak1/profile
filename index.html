@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon" />
     <title>Rohit Nayak</title>
     <!-- Popper.js first, then CoreUI JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="style.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
@@ -32,7 +32,7 @@
             </li>
             <li class="c-sidebar-nav-dropdown">
                 <a href="#" class="c-sidebar-nav-dropdown-toggle">
-                    <i class="c-sidebar-nav-icon cil-address-book"></i> Experience
+                    <i class="c-sidebar-nav-icon fa fa-address-book"></i> Experience
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
                     <li class="c-sidebar-nav-item">
@@ -63,8 +63,8 @@
                 </ul>
             </li>
             <li class="c-sidebar-nav-item">
-                <a href="/" class="c-sidebar-nav-link">
-                    <i class="c-sidebar-nav-icon cil-school"></i> Education
+                <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('education')">
+                    <i class="c-sidebar-nav-icon fa fa-university"></i> Education
                 </a>
             </li>
             <li class="c-sidebar-nav-dropdown">
@@ -73,44 +73,34 @@
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('todo')">
                             <i class="c-sidebar-nav-icon fa fa-pencil"></i> To-Do App
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('dept')">
                             <i class="c-sidebar-nav-icon fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i> Department Website
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('quiz')">
                             <i class="c-sidebar-nav-icon fa fa-users" aria-hidden="true"></i> Quiz Portal
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
-                            <i class="c-sidebar-nav-icon fa fa-shopping-cart" aria-hidden="true"></i> E-Commerce Website
-                        </a>
-                    </li>
-                    <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
+                        <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('getBlock')">
                             <i class="c-sidebar-nav-icon fa fa-code" aria-hidden="true"></i> Get Block Algorithm
-                        </a>
-                    </li>
-                    <li class="c-sidebar-nav-item">
-                        <a href="#" class="c-sidebar-nav-link">
-                            <i class="c-sidebar-nav-icon fa fa-code" aria-hidden="true"></i> FTP Simulation
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="c-sidebar-nav-item">
-                <a href="#" class="c-sidebar-nav-link">
+                <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('skills')">
                     <i class="c-sidebar-nav-icon fa fa-cog"></i> Skills
                 </a>
             </li>
             <li class="c-sidebar-nav-item">
-                <a href="#" class="c-sidebar-nav-link">
+                <a href="#" class="c-sidebar-nav-link" onclick="updateInnerBox('profile')">
                     <i class="c-sidebar-nav-icon fa fa-link"></i> Connect With Me
                 </a>
             </li>
@@ -159,69 +149,127 @@
                 <div class="container-fluid">
                     <div class="fade-in" id="theme">
                         <!-- <div>
-                            <div class="card">
+                            <div class="card animate__animated animate__fadeInUp">
                                 <div class="card-header">
-                                    Department Website
+                                    <strong>Skills</strong>
                                 </div>
-                                <div class="card-body card-columns">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Details
-                                        </div>
+                                <div class="card-body row">
+                                    <div class="card col-sm-4 ml-sm-3 col-12">
                                         <div class="card-body">
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <i class="c-icon fa fa-angle-double-right"></i> Created dynamic version of website for semester project
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <i class="c-icon fa fa-angle-double-right"></i> data to be was stored on JSON file
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <i class="c-icon fa fa-angle-double-right"></i> Project was completed successfully
-                                                </li>
-                                            </ul>
+                                            <div class="text-value-lg">
+                                                Data Structure & Algorithms
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <strong>Tech Stack</strong>
-                                        </div>
+                                    <div class="card col-sm-3 ml-sm-3 col-12">
                                         <div class="card-body">
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <i class="c-icon fa fa-angle-double-right"></i
-                            >Node.js
-                          </li>
-                          <li class="list-group-item">
-                            <i class="c-icon fa fa-angle-double-right"></i
-                            >Express with EJS
-                          </li>
-                          <li class="list-group-item">
-                            <i class="c-icon fa fa-angle-double-right"></i
-                            >MongoDB
-                          </li>
-                          <li class="list-group-item">
-                            <i class="c-icon fa fa-angle-double-right"></i
-                            >GitHub
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header">
-                        <strong> Collaborators</strong>
-                      </div>
-                      <div class="card-body">
-                        <ul class="list-group">
-                          <li class="list-group-item">
-                            <i class="c-icon fa fa-angle-double-right"></i>
-                                                    <a href="https://github.com/rnayak1" style="color: inherit;" target="_blank">
-                                                        <u>Rohit Nayak</u>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                            <div class="text-value-lg">
+                                                C++
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="card col-sm-3 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                Node.Js
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-sm-4 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                React-Native
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                    Beginner
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-sm-3 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                HTMl
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-sm-3 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                MongoDb
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-sm-4 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                REST API (Node.js)
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    Expert
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-sm-3 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                Bootstrap
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-sm-3 ml-sm-3 col-12">
+                                        <div class="card-body">
+                                            <div class="text-value-lg">
+                                                Javascript
+                                            </div>
+                                            <div class="progress my-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                    Intermediate
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card animate__animated animate__bounceInUp">
+                                <div class="card-header">
+                                    <strong>My github activities</strong>
+                                </div>
+                                <div class="card-body" id="git">
+
                                 </div>
                             </div>
                         </div> -->
