@@ -159,10 +159,10 @@ const profile = `
                         </form>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-md  btn-ghost-success btn-outline-success" type="submit">
+                        <button class="btn btn-md btn-ghost-success btn-outline-success disabled" type="submit">
     Connect
     </button>
-                        <button class="btn btn-md btn-ghost-info" style="float: right;">
+                        <button class="btn btn-md btn-ghost-info disabled" style="float: right;">
     <i class="c-icon fa fa-coffee"></i>
     Buy me a Coffee
     </button>
