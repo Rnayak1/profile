@@ -213,7 +213,7 @@ const experience = {
                         <div class="card-body">
                             <strong>Duration &nbsp;
                                 <i class="c-icon fa fa-arrow-right"></i>
-                                Jan-2020 to Present
+                                Jan-2020 to June-2020
                             </strong>
                         </div>
                     </div>
