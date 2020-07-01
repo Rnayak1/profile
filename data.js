@@ -12,7 +12,7 @@ const profile = `
                     </div>
                     <div card-body>
                         <h5>
-                            <br /> Completed Masters from DU and now seeking to startmy career in Applicaton Devlopment. <br /> Fond of travelling <i class="fa fa-car"></i> but Lazy on weekend <i class="fa fa-bed"></i> .
+                            <br /> Completed Masters from DU and now seeking to start my career in Applicaton Devlopment. <br /> Fond of travelling <i class="fa fa-car"></i> but Lazy on weekend <i class="fa fa-bed"></i> .
                         </h5>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const profile = `
                             </li>
                             <br />
                             <li class="fa fa-hand-o-right">
-                                &nbsp; &nbsp; Partying
+                                &nbsp; &nbsp; Party
                             </li>
                         </h5>
                     </div>
@@ -108,7 +108,7 @@ const profile = `
                     </div>
                     <div card-body>
                         <h5>
-                            <br /> I am a Application Developer Proficient in Node.js and building RESTful API's. Have a good command over various technologies and basic fundamentals
+                            <br /> I am an Application Developer Proficient in Node.js and building RESTful API's. Have a good command over various technologies and basic fundamentals
                         </h5>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ const profile = `
                     <div card-body>
                         <h5>
                             <br /> Hey !!! welcome to my page. Want to have my resume,
-                            <a href="https://drive.google.com/uc?export=download&id=1XcihKS3xv0Ggx0w8Tt6M30vzrzX6_eKr" target="_blank" rel="noopener noreferrer" download>
+                            <a href="https://drive.google.com/uc?export=download&id=1CQg5AHRfPkRHdC5tqAOhdev5qjumZ0-h" target="_blank" rel="noopener noreferrer" download>
                                 <i><u>click Here</u></i>
                             </a>
                             to see my resume.
