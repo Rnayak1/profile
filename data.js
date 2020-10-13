@@ -119,7 +119,7 @@ const profile = `
                     <div card-body>
                         <h5>
                             <br /> Hey !!! welcome to my page. Want to have my resume,
-                            <a href="https://drive.google.com/uc?export=download&id=1CQg5AHRfPkRHdC5tqAOhdev5qjumZ0-h" target="_blank" rel="noopener noreferrer" download>
+                            <a href="https://drive.google.com/uc?export=download&id=1oi2P2y30bHolzC6y4yIFJoGsy_BczwPP" target="_blank" rel="noopener noreferrer" download>
                                 <i><u>click Here</u></i>
                             </a>
                             to see my resume.
