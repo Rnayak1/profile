@@ -119,7 +119,7 @@ const profile = `
                     <div card-body>
                         <h5>
                             <br /> Hey !!! welcome to my page. Want to have my resume,
-                            <a href="https://drive.google.com/uc?export=download&id=1XcihKS3xv0Ggx0w8Tt6M30vzrzX6_eKr" target="_blank" rel="noopener noreferrer" download>
+                            <a href="https://drive.google.com/uc?export=download&id=1oi2P2y30bHolzC6y4yIFJoGsy_BczwPP" target="_blank" rel="noopener noreferrer" download>
                                 <i><u>click Here</u></i>
                             </a>
                             to see my resume.
@@ -533,8 +533,8 @@ const experience = {
             </div>
         </div>
     </div>
-    `
-}
+    `,
+};
 const education = `
 <div>
     <div class="card animate__animated animate__zoomIn">
@@ -678,7 +678,7 @@ const education = `
         </div>
     </div>
 </div>
-`
+`;
 
 const projects = {
     todo: `
@@ -983,7 +983,7 @@ const projects = {
         </div>
     </div>
     `,
-}
+};
 
 const skills = `
 <div>
@@ -1119,73 +1119,73 @@ const notFound = `
 `;
 
 const dat = () => {
-    console.log(data)
-}
+    console.log(data);
+};
 
 const gitData = async(userName) => {
-    const gitData = await axios.get(`https://api.bloggify.net/gh-calendar/?username=${userName}`)
-    console.log(typeof(gitData.data));
-    document.getElementById('git').innerHTML += gitData.data;
-    document.getElementsByClassName('contrib-footer')[0].style.display = "none"
-}
-
+    const gitData = await axios.get(
+        `https://api.bloggify.net/gh-calendar/?username=${userName}`
+    );
+    console.log(typeof gitData.data);
+    document.getElementById("git").innerHTML += gitData.data;
+    document.getElementsByClassName("contrib-footer")[0].style.display = "none";
+};
 
 const changeTheme = () => {
-    if (document.body.classList.contains('c-dark-theme'))
-        document.body.classList.remove('c-dark-theme')
-    else
-        document.body.classList.add('c-dark-theme')
-}
+    if (document.body.classList.contains("c-dark-theme"))
+        document.body.classList.remove("c-dark-theme");
+    else document.body.classList.add("c-dark-theme");
+};
 
 const updateInnerBox = (dataToLoad) => {
-    if (document.getElementById('theme').firstElementChild)
-        document.getElementById('theme').firstElementChild.remove(this);
-    console.log(dataToLoad)
+    if (document.getElementById("theme").firstElementChild)
+        document.getElementById("theme").firstElementChild.remove(this);
+    console.log(dataToLoad);
     switch (dataToLoad) {
         case "profile":
-            document.getElementById('theme').innerHTML = profile;
+            document.getElementById("theme").innerHTML = profile;
             break;
         case "adsxenium":
-            document.getElementById('theme').innerHTML = experience.adsXenium;
+            document.getElementById("theme").innerHTML = experience.adsXenium;
             break;
         case "credence":
-            document.getElementById('theme').innerHTML = experience.credence;
+            document.getElementById("theme").innerHTML = experience.credence;
             break;
         case "silhoutte":
-            document.getElementById('theme').innerHTML = experience.silhoutte;
+            document.getElementById("theme").innerHTML = experience.silhoutte;
             break;
         case "iAdept":
-            document.getElementById('theme').innerHTML = experience.iAdept;
+            document.getElementById("theme").innerHTML = experience.iAdept;
             break;
         case "jabong":
-            document.getElementById('theme').innerHTML = experience.jabong;
+            document.getElementById("theme").innerHTML = experience.jabong;
             break;
         case "education":
-            document.getElementById('theme').innerHTML = education;
+            document.getElementById("theme").innerHTML = education;
             break;
         case "todo":
-            document.getElementById('theme').innerHTML = projects.todo;
+            document.getElementById("theme").innerHTML = projects.todo;
             break;
         case "dept":
-            document.getElementById('theme').innerHTML = projects.dept;
+            document.getElementById("theme").innerHTML = projects.dept;
             break;
         case "quiz":
-            document.getElementById('theme').innerHTML = projects.quiz;
+            document.getElementById("theme").innerHTML = projects.quiz;
             break;
         case "getBlock":
-            document.getElementById('theme').innerHTML = projects.getBlock;
+            document.getElementById("theme").innerHTML = projects.getBlock;
             break;
         case "ftp":
-            document.getElementById('theme').innerHTML = projects.ftp;
+            document.getElementById("theme").innerHTML = projects.ftp;
             break;
         case "skills":
-            document.getElementById('theme').innerHTML = skills;
-            gitData('rnayak1');
+            document.getElementById("theme").innerHTML = skills;
+            gitData("rnayak1");
             break;
         default:
-            document.getElementById('theme').innerHTML = notFound;
+            document.getElementById("theme").innerHTML = notFound;
             break;
     }
-}
+};
 
-updateInnerBox('profile')
+updateInnerBox("profile");
